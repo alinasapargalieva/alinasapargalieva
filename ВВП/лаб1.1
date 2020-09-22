@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int a, b, s, p;
+	scanf_s("%d%d", &a, &b);
+	s = a * b;
+	printf("Площадь равна %d\n", s);
+	p = 2 * (a + b);
+	printf("Периметр равен %d", p);
+	return 0;
+}
