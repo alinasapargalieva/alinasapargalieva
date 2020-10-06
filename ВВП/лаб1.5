@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int x, y, z, a, b, d;
+	scanf_s("%d%d", &x, &y);
+	z = x + y;
+	printf("Сумма равна %d\n", abs(z));
+	a = x - y;
+	printf("Разность равна %d\n", abs(a));
+	b = x * y;
+	printf("Произведение равно %d\n", abs(b));
+	d = x / y;
+	printf("Частное равно %d\n", abs(d));
+	return 0;
+}
