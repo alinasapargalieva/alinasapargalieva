@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int A, B, C, AC, BC, s;
+	puts("Введите A:");
+	scanf_s("%d", &A);
+	puts("Введите B:");
+	scanf_s("%d", &B);
+	puts("Введите C:");
+	scanf_s("%d", &C);
+	AC = abs(A - C);
+	printf("Длина отрезка AC равна %d \n ", AC);
+	BC = abs(B - C);
+	printf("Длина отрезка ВС равна %d \n", BC);
+	s = AC + BC;
+	printf("Сумма длин отрезков равна %d", s);
+}
