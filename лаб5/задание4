@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int x1, x2, y1, y2, a, b, P, S;
+	puts("Введите x1:");
+	scanf_s("%d", &x1);
+	puts("Введите x2:");
+	scanf_s("%d", &x2);
+	puts("Введите y1:");
+	scanf_s("%d", &y1);
+	puts("Введите y2:");
+	scanf_s("%d", &y2);
+	a = abs(x2 - x1);
+	b = abs(y2 - y1);
+	P = a * 2 + b * 2;
+	printf("Периметр равен %d\n", P);
+	S = a * b;
+	printf("Площадь равна %d", S);
+}
