@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+	int A = 5, B = 76, C;
+	C = A;
+	A = B;
+	B = C;
+	printf("%d, %d", A, B);
+	return 0;
+}
