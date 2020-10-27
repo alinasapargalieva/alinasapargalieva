@@ -1,8 +1,9 @@
 #include <stdio.h>
-#include <math.h>
 int main() {
-	int y, A=2, b=5;
-	y = (pow(A, b)) * A * A * A;
-	printf("%d", y);
+	int A=2, b;
+	b = A * A;
+	b = b * b;
+	b = b * b;
+	printf("%d", b);
 	return 0;
 }
