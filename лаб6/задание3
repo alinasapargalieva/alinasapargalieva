@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+	int A = 5, B = 76, C=54, e, f;
+	e = B;
+	f = C;
+	B = f;
+	C = A;
+	A = e;
+    printf("%d, %d, %d", A, B, C);
+	return 0;
+}
