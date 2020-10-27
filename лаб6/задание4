@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+	int y, x = 3, b = 6, c = 2;
+	y = 3 * (pow (x, b)) - 6 * (pow(x, c)) - 7;
+	printf("%d", y);
+	return 0;
+}
