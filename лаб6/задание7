@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+	int A=2, b, c;
+	b = A * A;
+	c = b * A;
+	c = c * b;
+	b = c * c;
+	b = c * b;
+	printf("%d", b);
+	return 0;
+}
