@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+	int A = 5, B = 10, x;
+	x = -B / A;
+	printf(" %d", x);
+    return 0;
+}
