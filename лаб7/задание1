@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+	setlocale(LC_ALL, "Russian");
+	float Pi = 3.14, a = 250.00, rad;
+	rad = (Pi * a) / 180;
+	printf("Угол в радианах равен %f", rad);
+    return 0;
+}
