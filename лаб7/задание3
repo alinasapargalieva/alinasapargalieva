@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int X, Y, A, B, C;
+	puts("Введите вес конфет ");
+	scanf_s("%d", &X);
+	puts("Введите стоимость конфет ");
+	scanf_s("%d", &A);
+	B = A / X;
+	printf("Стоимость одного килограмма конфет %d рублей\n", B);
+	puts("Введите вес конфет ");
+	scanf_s("%d", &Y);
+	C = B * Y;
+	printf("Стоимость Y кг конфет %d рублей", C);
+    return 0;
+}
