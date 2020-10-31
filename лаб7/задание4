@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int V1, V2, S, S1, S2, T;
+	puts("Введите скорость первого автомобиля");
+	scanf_s("%d", &V1);
+	puts("Введите скорость второго автомобиля ");
+	scanf_s("%d", &V2);
+	puts("Введите время");
+	scanf_s("%d", &T);
+	S1 = V1 * T;
+	S2 = V2 * T;
+	S = S1 + S2;
+	printf("Расстояние между автомобилями равно %d", S);
+    return 0;
+}
