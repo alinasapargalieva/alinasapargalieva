@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+	int A = 70, B = 30, C, D, E; 
+	C = A / B;
+	D = C * B;
+	E = A - D;
+	printf("%d ", E);
+    return 0;
+}
