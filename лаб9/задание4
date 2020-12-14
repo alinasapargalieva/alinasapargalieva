@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int A = 6, B = 9, C = 4, S1, S2, S3, X;
+	S1 = A * B;
+	S2 = C * C;
+	X = S1 / S2;
+	S3 = S1 - X*S2;
+	printf("Количество квадратов равно %d ", X);
+	printf("Площадь незанятой части прямоугольника %d ", S3);
+    return 0;
+}
