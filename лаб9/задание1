@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+	int N = 154, X;
+	X = N % 60;
+	printf("%d ", X);
+    return 0;
+}
