@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+	int K = 28, N = 5, X;
+	X = (K + N - 2) % 7 + 1;
+	printf("%d ", X);
+    return 0;
+}
