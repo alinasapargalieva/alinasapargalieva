@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+	int A = 154, B;
+	B = A % 100 * 10 + A / 100;
+	printf("%d ", B);
+    return 0;
+}
