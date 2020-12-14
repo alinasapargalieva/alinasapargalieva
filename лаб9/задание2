@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+	int K = 257, X;
+	X = K % 7;
+	printf("%d ", X);
+    return 0;
+}
