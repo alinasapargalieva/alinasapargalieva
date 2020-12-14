@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+	int A = 70, B = 30, C; 
+	C = A / B;
+	printf("%d ", C);
+    return 0;
+}
