@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main() {
+    int X = 6776;
+    printf("%d ", (X%10==X/1000) & (X%100/10==X%1000/100));
+    return 0;
+}
