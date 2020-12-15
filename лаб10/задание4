@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    int A = 555, a, b, c;
+    a = A / 100;
+    b = A % 100 / 10;
+    c = A % 10;
+    printf("%d ", ((a<b)&(b<c))|((a>b)&(b>c)));
+    return 0;
+}
