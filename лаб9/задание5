@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+	int A = 1901, X;
+	X = (A - 1) / 100 + 1;
+	printf("%d ", X);
+    return 0;
+}
