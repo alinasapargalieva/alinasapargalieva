@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main() {
+    int A = 145;
+    printf("%d ", (A%2==0) & (A>9) & (A<100));
+    return 0;
+}
