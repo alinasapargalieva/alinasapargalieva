@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int X, Y;
+	puts("Введите X:");
+	scanf_s("%d", &X);
+	puts("Введите Y:");
+	scanf_s("%d", &Y);
+	if ((X > 0) & (Y > 0)) {
+		printf("Первая четверть");
+	}
+	 if ((X < 0) & (Y > 0)) {
+		printf("Вторая четверть");
+	}
+	 if ((X < 0) & (Y < 0)) {
+		 printf("Третья четверть");
+	 }
+	 if ((X > 0) & (Y < 0)) {
+		 printf("Четвертая четверть");
+	 }
+    return 0;
+}
