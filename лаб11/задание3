@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+#include <locale.h>
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int A, B, C, AB, AC;
+	puts("Введите A:");
+	scanf_s("%d", &A);
+	puts("Введите B:");
+	scanf_s("%d", &B);
+	puts("Введите C:");
+	scanf_s("%d", &C);
+	AB = abs(A - B);
+	AC = abs(A - C);
+	if (AB < AC) {
+		printf("Ближе к А расположена точка В, расстояние равно %d", AB);
+	}
+	else {
+		printf("Ближе к А расположена точка C, расстояние равно %d", AC);
+	}
+    return 0;
+}
