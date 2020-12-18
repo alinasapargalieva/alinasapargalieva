@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int A = 9, B = 7, M;
+    if (A == B) {
+        A = 0;
+        B = 0;
+    }
+     if (A > B) {
+        M = A;
+    }
+    else { 
+        M = B;
+    }
+       A = M;
+       B = M;
+    printf("%d,%d ", A, B );
+    return 0;
+}
