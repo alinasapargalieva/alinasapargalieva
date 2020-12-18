@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int A = 9, B = 7, C = 4, S;
+    if ((A <= B) & (A <= C)) {
+        S = B + C;
+    }
+    else if ((B <= A) & (B <= C)) {
+        S = A + C;
+    }
+    else {
+        S = B + A;
+    }
+
+    printf("%d", S );
+    return 0;
+}
