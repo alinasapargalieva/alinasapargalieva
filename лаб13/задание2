@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int i=1, N = 5;
+    float A=1;
+    for (i = 1; i < N; i++)
+        A = A * (1 + (float)i/10);
+    printf("Результат равен  %f\n", A);
+    return 0;
+}
