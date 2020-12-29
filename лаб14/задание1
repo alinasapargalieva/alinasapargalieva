@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int A = 4, B = 7, i = A, j = 0;
+    for (i; i <= B; i++) {
+        for (j; j < i; j++)
+            printf("%i\n", i);
+        }
+ return 0;
+}
