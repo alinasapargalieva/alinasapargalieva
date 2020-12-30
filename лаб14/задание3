@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int K = 0, N = 32, S = 0;
+    while (S < N) {
+        K++;
+        S += K;
+    }
+    printf("Наименьшее К: %d\n", K);
+    printf("Сумма %d", S);
+    return 0;
+}
