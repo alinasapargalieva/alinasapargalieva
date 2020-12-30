@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int A = 15, B = 7;
+    while (A >= B) {
+        A = A - B;
+    }
+    printf("Длина незанятой части отрезка А равно %d", A);
+    return 0;
+}
