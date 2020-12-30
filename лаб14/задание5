@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+    setlocale(LC_ALL, "Russian");
+    int A = 36, B = 76, N;
+    while (A != 0 && B != 0) {
+        if (A > B) 
+        {
+            A = A % B; 
+        }
+        else
+        {
+            B = B % A;
+        }
+    } 
+    N = A + B; 
+    printf("Наибольший общий делитель равен %d", N); 
+    return 0;
+}
