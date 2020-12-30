@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <locale.h>
+int main() {
+    setlocale(LC_ALL, "Russian");
+    float V = 1000, P = 23.5, S = 1, K = 0;
+    while (S <= 1100) {
+        S = S * (P / 100 + 1);
+        K++;
+    }
+    printf("Количество месяцев: %f\n", K);
+    printf("Итоговый размер вклада: %f", S);
+    return 0;
+}
