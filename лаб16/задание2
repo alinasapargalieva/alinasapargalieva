@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(void) {
+    int N=5, A=7, D=4, i, j=1;
+    int a[5];
+    for (i = 0; i < N; ++i) {
+        a[i] = A * j;
+        j *= D;
+    }
+    for (i = 0; i < N; ++i) 
+        printf("%i\n", a[i]);
+    return 0;
+}
