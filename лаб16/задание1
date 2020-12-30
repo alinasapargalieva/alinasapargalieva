@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(void) {
+    int a[10];
+    int N, i = 1, j = 1;
+    puts("N: ");
+    scanf_s("%d", &N);
+    for (i = 0; i < N; ++i, j += 2) 
+        a[i] = j;
+    for (i = 0; i < N; ++i) 
+        printf("%i\n", a[i]);
+    return 0;
+}
