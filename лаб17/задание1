@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(void) {
+    int N = 10, K = 5, L = 7, i, s=0;
+    int A[10];
+    float cp;
+    for (i = 0; i < N; ++i) {
+        printf("a[%i] : ", i + 1);
+        scanf_s("%i", &A[i]);
+    }
+    for (i = K - 1; i <= L - 1; ++i) 
+        s += A[i];
+    cp = (float)s / (float)(L - K + 1);
+        printf("%f", cp);
+    return 0;
+}
