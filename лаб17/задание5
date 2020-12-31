@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(void) {
+    int N = 8, i, j;
+    int A[8];
+    for (i = 0; i < N; ++i) {
+        printf("a[%i] : ", i + 1);
+        scanf_s("%i", &A[i]);
+    }
+    for (i = 1; i < N - 1; ++i) {
+        for (j = i + 1; j < N; ++j) {
+            if (A[i] = A[j])
+                printf("%d, %d", i, j);
+        }
+    }
+    return 0;
+}
