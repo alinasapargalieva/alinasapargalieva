@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(void) {
+    int N = 5, i;
+    int A[5];
+    for (i = 0; i < N; ++i) {
+        printf("a[%i] : ", i + 1);
+        scanf_s("%i", &A[i]);
+    }
+
+    for (i = 0; i < N / 2; ++i) {
+        printf("%i\n", A[i]);
+        printf("%i\n", A[N - i - 1]);
+    }
+    if (N % 2 != 0) printf("%i\n", A[(N / 2)]);
+
+    return 0;
+}
