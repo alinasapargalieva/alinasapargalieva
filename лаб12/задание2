@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <string.h>
+#include <locale.h>
+int main(void) {
+	setlocale(LC_ALL, "Russian");
+	int O;
+	char C;
+	printf("Введите курс: ");
+	scanf_s("%c", &C);
+	printf("Направление: ");
+	scanf_s("%d", &O);
+	switch (C) {
+	case 'N':
+		switch (O) {
+		case 1:
+			printf("W"); 
+			break;
+		case 0:
+			printf("N"); 
+			break;
+		case -1:
+			printf("E");
+			break;
+		}
+		break;
+	case 'E':
+		switch (O) {
+		case 1:
+			printf("N");
+			break;
+		case 0:
+			printf("E");
+			break;
+		case -1:
+			printf("S"); 
+			break;
+		}
+	case 'S':
+		switch (O) {
+		case 1:
+			printf("E");
+			break;
+		case 0:
+			printf("S");
+			break;
+		case -1:
+			printf("W");
+			break;
+		}
+		break;
+	case 'W':
+		switch (O) {
+		case 1:
+			printf("S");
+			break;
+		case 0:
+			printf("W");
+			break;
+		case -1:
+			printf("N");
+			break;
+		}
+	}
+	return 0;
+}
