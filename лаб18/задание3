@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(void) {
+    int N = 5, A[5], x, i, j;
+    for (i = 0; i < N; ++i) {
+        printf("a[%i] : ", i + 1);
+        scanf_s("%i", &A[i]);
+    }
+    for (i = N; i >= 0; i--)
+        if (A[i] % 2 != 0)
+            x = A[i];
+    for (j = 0; j < N; j++)
+        if (A[j] % 2 != 0)
+            A[j] = A[j] + x;
+    for (j = 0; j < N; j++)
+        printf("%d\n", A[j]);
+    return 0;
+}
