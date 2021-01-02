@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+float RingS(float R1, float R2) {
+	float S, pi = 3.14;
+	S = pi * (pow(R1, 2) - pow(R2, 2));
+	return (S);
+}
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int i;
+	float R1, R2, X;
+	for (i = 1; i <= 3; i++) {
+		printf("R1 = ");
+		scanf_s("%f", &R1);
+		printf("R2 < R1 = ");
+		scanf_s("%f", &R2);
+		X = RingS(R1, R2);
+		printf("Площадь равна %f\n", X);
+	}
+	return 0;
+}
