@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main(void) {
+    int A[10], B[10];
+    int N;
+    printf("N: ");
+    scanf_s("%i", &N);
+    int i;
+    for (i = 0; i < N; ++i) {
+        printf("a[%i] : ", i + 1);
+        scanf_s("%i", &A[i]);
+    }
+    for (i = 0; i < N; ++i) {
+        printf("b[%i] : ", i + 1);
+        scanf_s("%i", &B[i]);
+    }
+    for (i = 0; i < N; ++i) {
+        A[i] += B[i];
+        B[i] = A[i] - B[i];
+        A[i] = A[i] - B[i];
+    }
+    printf("A: \n");
+    for (i = 0; i < N; ++i)
+       printf("%i: %i\n", i + 1, A[i]);
+    printf("B: \n");
+    for (i = 0; i < N; ++i) 
+       printf("%i: %i\n", i + 1, B[i]);
+    return 0;
+}
