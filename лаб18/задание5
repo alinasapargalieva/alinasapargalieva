@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() {
+	int i = 0, b, arr[] = { 7, 1, 2, 4, 5, 6 };
+	int n = sizeof(arr) / sizeof(int);
+	float k = 1.247;
+	int step = n - 1;
+	while (step >= 1) {
+		i = 0;
+		while (i < n - step) {
+			if (arr[i] > arr[i + step]) {
+				b = arr[i];
+				arr[i] = arr[i + step];
+				arr[i + step] = b;
+			}
+			i++;
+		}
+		step /= k;
+	}
+	for (i = 0; i < n; i++)
+		printf("%d ", arr[i]);
+	return 0;
+}
